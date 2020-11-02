@@ -5,17 +5,14 @@
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", promptBox);
+generateBtn.addEventListener("click", writePassword);
 
-function promptBox() {
+
   var length = Number(prompt("How many characters will your password be? Enter a number between 8 and 128"));
   //ask for character type
   var charType = prompt("Enter a character type: special, numeric, uppercase, lowercase.");
-}
 
-  // var length = Number(prompt("How many characters will your password be? Enter a number between 8 and 128"));
-  // //ask for character type
-  // var charType = prompt("Enter a character type: special, numeric, uppercase, lowercase.");
+
 
 //prompt criteria
 function generatePassword() {
@@ -48,7 +45,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-// alert(generatePassword());
+ alert(generatePassword());
 
 // if (selectedCharacters === null || selectedCharacters === "") {
 //   window.alert("You must select at least one character type. Please try again.");
